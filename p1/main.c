@@ -5,8 +5,8 @@ int main()
     int answer,guess,cnt=0;
     scanf("%d",&answer);
     do{
-        cnt++;
         scanf("%d",&guess);
+        cnt++;
         if(answer>guess) printf("%d<?",guess);
         else if(answer==guess) {
         printf("%d==?\n",guess);
