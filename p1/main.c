@@ -3,7 +3,6 @@
 int main()
 {
     int answer,guess,cnt=0;
-    printf("정답 입력:");
     scanf("%d",&answer);
     do{
         cnt++;
