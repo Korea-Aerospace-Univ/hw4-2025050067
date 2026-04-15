@@ -9,7 +9,7 @@ int main() {
     int eng_cnt = 0, max_eng = 0;
     int num_cnt = 0, max_num = 0;
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i <= N; i++) {
         char c;
         scanf("%c", &c);
 
