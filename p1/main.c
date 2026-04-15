@@ -10,7 +10,7 @@ int main()
         if(answer>guess) printf("%d<?",guess);
         else if(answer==guess) {
         printf("%d==?\n",guess);
-        printf("%d",answer);
+        printf("%d",cnt);
         }
         else printf("%d>?",guess);
             
