@@ -1,16 +1,15 @@
-
 #include <stdio.h>
 
 int main() {
     int N;
     scanf("%d", &N);
-    
+    getchar();
 
     int eng_cnt = 0, max_eng = 0;
     int num_cnt = 0, max_num = 0;
-
-    for (int i = 0; i <= N; i++) {
-        char c;
+    char c;
+    for (int i = 0; i < N; i++) {
+        
         scanf("%c", &c);
 
         if (c >= 'a' && c <= 'z') {
