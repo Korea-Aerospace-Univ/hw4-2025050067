@@ -11,7 +11,7 @@ int main()
         else if(answer<guess) printf("%d>?\n",guess);
         
     }while(answer!=guess); //정답 다를땐 돌고 정답일떈 탈출
-    printf("%d==?\n",guess); 
+    printf("%d==?\n",guess); //탈출했으니 정답 맞혔다는거
     printf("%d",cnt);
 
     return 0;
