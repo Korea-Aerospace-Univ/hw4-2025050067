@@ -1,26 +1,32 @@
+
 #include <stdio.h>
 
-int main()
-{
-    int N; int engCnt=0; int maxEngCnt=0; int numCnt=0;  int maxNumCnt=0;
+int main() {
+    int N;
+    scanf("%d", &N);
     
-    
-    scanf("%d",&N);
-    char str[N];
-    scanf("%s",&str);
-    for(int i=0;i<N;++i){
-        char c=str[i];
-        if(c>='a' && c<='z'){
-            engCnt++;
-            numCnt=0;
+
+    int eng_cnt = 0, max_eng = 0;
+    int num_cnt = 0, max_num = 0;
+
+    for (int i = 0; i < N; i++) {
+        char c;
+        scanf("%c", &c);
+
+        if (c >= 'a' && c <= 'z') {
+            eng_cnt++;
+            num_cnt = 0;
+        } else { 
+            num_cnt++;
+            eng_cnt = 0;
         }
-        else{
-            numCnt++;
-            engCnt=0;
-        }
-        if(engCnt>maxEngCnt) maxEngCnt=engCnt;
-        if(numCnt>maxNumCnt) maxNumCnt=numCnt;
+
+        if (eng_cnt > max_eng) max_eng = eng_cnt;
+        if (num_cnt > max_num) max_num = num_cnt;
     }
-    printf("%d\n",maxEngCnt);
-    printf("%d\n",maxNumCnt);
+
+    printf("%d\n", max_eng);
+    printf("%d", max_num);
+
+    return 0;
 }
