@@ -7,8 +7,8 @@ int main()
     do{
         scanf("%d",&guess);
         cnt++;
-        if(answer>guess) printf("%d<?",guess);
-        else if(answer<guess) printf("%d>?",guess);
+        if(answer>guess) printf("%d<?\n",guess);
+        else if(answer<guess) printf("%d>?\n",guess);
         else {
         printf("%d==?\n",guess);
         printf("%d",cnt);
